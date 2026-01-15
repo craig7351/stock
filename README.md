@@ -1,43 +1,80 @@
 ---
+description: Welcome to your team’s developer platform
+layout:
+  width: wide
+  title:
+    visible: false
+  description:
+    visible: false
+  tableOfContents:
+    visible: false
+  outline:
+    visible: false
+  pagination:
+    visible: false
+  metadata:
+    visible: true
 metaLinks:
   alternates:
     - https://app.gitbook.com/s/2AwfWOGBWBxQmyvHedqW/
 ---
 
-# 📈 股票分析師會議室 (AI Prompt Pack)
+# Developer Platform
 
-這不是一個軟體程式，而是一套**AI 角色設定集 (Prompt Pack)**。 透過這份設定，您可以將任何 AI 助手 (如 Antigravity, ChatGPT, Claude, Gemini) 變身為三位風格迥異的股票分析師，與您召開投資會議。
+<h2 align="center">Developer platform template</h2>
 
-## � 檔案介紹
+<p align="center">Welcome to your team’s new developer platform</p>
 
-* **`analyst_personas.md`**: 這是核心檔案，裡面詳細定義了三位分析師的性格、分析邏輯和口頭禪。
-  1. **👴 老沈 (價值投資)**：看財報、算合理價。
-  2. **📉 阿豪 (技術分析)**：看 K 線、抓轉折。
-  3. **🕵️ 消息通 (市場消息)**：看八卦、追熱點。
+<p align="center"><a href="http://app.gitbook.com/join" class="button primary">Sign up</a> <a href="http://app.gitbook.com/join" class="button secondary">Log in</a></p>
 
-## 🚀 如何使用 (Instructions)
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h4><i class="fa-leaf">:leaf:</i></h4></td><td><strong>No code</strong></td><td>Get started with the developer platform in 5 minutes.</td><td><a href="https://app.gitbook.com/o/5oWiYuZjDDCmOlUaFfc1/s/PQO90tiIxaJQrCdASaD0/">Documentation</a></td><td><a href=".gitbook/assets/no-code.jpg">no-code.jpg</a></td></tr><tr><td><h4><i class="fa-server">:server:</i></h4></td><td><strong>Hosted</strong></td><td>Learn more about hosting the developer platform.</td><td><a href="https://app.gitbook.com/o/5oWiYuZjDDCmOlUaFfc1/s/PQO90tiIxaJQrCdASaD0/">Documentation</a></td><td><a href=".gitbook/assets/hosted.jpg">hosted.jpg</a></td></tr><tr><td><h4><i class="fa-terminal">:terminal:</i></h4></td><td><strong>API reference</strong></td><td>Browse, test, and implement APIs.</td><td><a href="https://app.gitbook.com/o/5oWiYuZjDDCmOlUaFfc1/s/jXnik9WuI5ILoGq3HkYP/">API Reference</a></td><td><a href=".gitbook/assets/api-reference.jpg">api-reference.jpg</a></td></tr></tbody></table>
 
-請依照以下步驟操作，即可開始對話：
+{% columns %}
+{% column %}
+### Get started in 5 minutes
 
-### 第一步：載入角色
+Setting up your first API call should be the easiest part of getting started. With clear endpoints, copy-paste-ready examples, and quick authentication, you’ll be up and running in minutes—not hours.
 
-請複製 `analyst_personas.md` 的完整內容，貼給您的 AI 助手，並附上以下指令：
+No guesswork, no complexity—just your first successful call, fast.
 
-> "請記住以上三位分析師的設定 (老沈、阿豪、消息通)。 接下來，我會輸入股票代碼或投資問題，請讓這三位分析師依據各自的風格進行分析與辯論。 不需要寫程式，請直接以角色扮演的方式回答我。 如果準備好了，請模擬會議室場景並請我輸入代碼。"
+<a href="https://app.gitbook.com/o/5oWiYuZjDDCmOlUaFfc1/s/PQO90tiIxaJQrCdASaD0/" class="button primary" data-icon="rocket-launch">Get started</a> <a href="https://app.gitbook.com/o/5oWiYuZjDDCmOlUaFfc1/s/jXnik9WuI5ILoGq3HkYP/" class="button secondary" data-icon="terminal">API reference</a>
+{% endcolumn %}
 
-**(如果您是在 VS Code 中使用 Antigravity，只需要請它「讀取 analyst\_personas.md 並扮演這些角色」即可。)**
+{% column %}
+{% code title="index.js" overflow="wrap" %}
+```javascript
+// Import the SDK
+import ExampleAPI from "example-api";
 
-### 第二步：開始會議
+// Initialize the client
+const client = new ExampleAPI({ apiKey: "YOUR_API_KEY" });
 
-AI 會回應您：「會議室已準備好...」 這時您就可以輸入：
+// Send your first message
+const response = await client.messages.send({
+  message: "Hello, world!"
+});
 
-* 「分析 2330 台積電」
-* 「手上有 4 張微星套在 125 該怎麼辦？」
-* 「最近有什麼 AI 概念股值得注意？」
+```
+{% endcode %}
+{% endcolumn %}
+{% endcolumns %}
 
-三位分析師就會開始吵架給你看囉！
+{% columns %}
+{% column %}
+<figure><img src="https://gitbookio.github.io/onboarding-template-images/placeholder.png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
 
-## � 提示技巧 (Pro Tips)
+{% column %}
+### Learn more about the developer platform
 
-* **指定主持人**：您可以要求 AI 擔任主持人，在三人爭論後幫您做總結。
-* **提供數據**：如果您有最新的新聞或財報數據，可以直接貼給 AI，他們會根據新資訊給出不同的解讀。
+Read guides, watch tutorials, and learn more about working with the developer platform and integrating it with your own stack.
+
+<a href="https://app.gitbook.com/o/5oWiYuZjDDCmOlUaFfc1/s/FfOMFIdeq7BgwSudbXh5/" class="button primary" data-icon="book-open">Guides</a> <a href="https://app.gitbook.com/o/5oWiYuZjDDCmOlUaFfc1/s/PQO90tiIxaJQrCdASaD0/" class="button secondary" data-icon="book">Documentation</a>
+{% endcolumn %}
+{% endcolumns %}
+
+<h2 align="center">Join a community of over 3,000 developers</h2>
+
+<p align="center">Join our Discord community or create your first PR in just a few steps.</p>
+
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><h4><i class="fa-discord">:discord:</i></h4></td><td><strong>Discord community</strong></td><td>Join our Discord community to post questions, get help, and share resources with over 3,000 like-minded developers.</td><td><a href="https://www.gitbook.com/" class="button secondary">Join Discord</a></td><td></td></tr><tr><td><h4><i class="fa-github">:github:</i></h4></td><td><strong>GitHub</strong></td><td>Our product is 100% open source and built by developers just like you. Head to our GitHub repository to learn how to submit your first PR.</td><td><a href="https://www.gitbook.com/" class="button secondary">Submit a PR</a></td><td></td></tr></tbody></table>
